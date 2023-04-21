@@ -1,0 +1,31 @@
+{
+  "name": "eat-erc-20",
+  "version": "1.0.0",
+  "description": "EAT Token Smart Contract",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "npx hardhat run scripts/deploy.ts",
+    "sepolia-deploy": "npx hardhat run --network sepolia scripts/deploy.ts",
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test"
+  },
+  "keywords": [
+    "ethereum",
+    "web3",
+    "smart-contracts",
+    "hardhat",
+    "alchemy",
+    "erc-20",
+    "typescript"
+  ],
+  "author": "Eduardo Aire",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "dotenv": "^16.0.3",
+    "hardhat": "^2.14.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.3"
+  }
+}
