@@ -2,7 +2,7 @@ import { ethers } from 'hardhat';
 import { ContractFactory, Contract } from 'ethers';
 const { getContractFactory } = ethers;
 
-async function main() {
+async function main(): Promise<void> {
     const [deployer] = await ethers.getSigners();
     console.log('Deploying contracts with the account:', deployer.address);
 
