@@ -4,7 +4,7 @@ import { config as dotenvConfig } from 'dotenv';
 
 dotenvConfig();
 
-const { SEPOLIA_URL, PRIV_KEY } = process.env;
+const { SEPOLIA_URL, PRIV_KEY, ETHERSCAN_KEY } = process.env;
 
 const config: HardhatUserConfig = {
     solidity: '0.8.19',
@@ -13,6 +13,9 @@ const config: HardhatUserConfig = {
             url: SEPOLIA_URL,
             accounts: PRIV_KEY ? [PRIV_KEY] : undefined,
         },
+    },
+    etherscan: {
+        apiKey: ETHERSCAN_KEY,
     },
 };
 

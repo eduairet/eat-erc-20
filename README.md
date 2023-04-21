@@ -16,7 +16,7 @@ This project has the Smart Contract for the EAT ERC-20 Token.
     ```JSON
     "scripts": {
         "deploy": "npx hardhat run scripts/deploy.ts",
-        "sepolia-deploy": "npx hardhat run --network sepolia scripts/deploy.ts",
+        "sepolia-deploy": "npx hardhat run scripts/deploy.ts --network sepolia",
         "compile": "npx hardhat compile",
         "test": "npx hardhat test"
     }
@@ -30,3 +30,8 @@ This project has the Smart Contract for the EAT ERC-20 Token.
     npm run compile
     npm run test
     ```
+
+## Live Token
+
+-   Sepolia
+    -   [0x66822E383d55c48bB84FA16Ae59d07aB3fA76948](https://sepolia.etherscan.io/address/0x66822E383d55c48bB84FA16Ae59d07aB3fA76948#code)
