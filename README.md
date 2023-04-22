@@ -7,7 +7,9 @@ This project has the Smart Contract for the EAT ERC-20 Token.
 -   Project configuration -> [`hardhat.config.ts`](./hardhat.config.ts)
 -   Contract -> [`EatToken.sol`](./contracts/EatToken.sol)
 -   Deploy Script -> [`deploy.ts`](./scripts/deploy.ts)
--   EatToken Tests -> [`deploy.ts`](./test/EatToken.ts)
+-   Airdrop Script -> [`airdrop.ts`](./scripts/airdrop.ts)
+-   Winner Script -> [`winner.ts`](./scripts/winner.ts)
+-   EatToken Tests -> [`EatToken.ts`](./test/EatToken.ts)
 
 ## Tasks
 
@@ -55,3 +57,10 @@ This project has the Smart Contract for the EAT ERC-20 Token.
         https://goerli.etherscan.io/tx/0x739a0c4c55ab4a204200ddd5ceb70790256a11a2629d876bfee5b36fede0369e
         https://goerli.etherscan.io/tx/0x349d8d7c2fe183009fb15006bf0f919ccf5310d26d8342b578d90f860555dd29
         ```
+
+-   Winner
+    -   This script sends 10 EAT to the `Bucket` contract at [0x873289a1aD6Cf024B927bd13bd183B264d274c68](https://goerli.etherscan.io/address/0x873289a1ad6cf024b927bd13bd183b264d274c68)
+    -   The transfer emits the `Winner` event from `Bucket`, which displays the winner address, in this case, the signer
+        -   This transaction requires to give allowance to the `Bucket` contract to take the drop value from the `ERC-20` token using the function `approve()`
+        -   When the value and spender (`Bucket`) are approved the `drop()` method from `Bucket` can be called by the signer
+        -   Check the transaction [0x9575f88d54b29899fae7100513b1adaeb4eb08c6d25ac2f53e3131de6381871f](https://goerli.etherscan.io/tx/0x9575f88d54b29899fae7100513b1adaeb4eb08c6d25ac2f53e3131de6381871f#eventlog) executed with the script
