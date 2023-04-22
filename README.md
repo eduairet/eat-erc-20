@@ -2,7 +2,7 @@
 
 This project has the Smart Contract for the EAT ERC-20 Token.
 
-## Structure
+## Structure
 
 -   Project configuration -> [`hardhat.config.ts`](./hardhat.config.ts)
 -   Contract -> [`EatToken.sol`](./contracts/EatToken.sol)
