@@ -59,6 +59,7 @@ This project has the Smart Contract for the EAT ERC-20 Token.
         ```
 
 -   Winner
+    -   The script works only on Goerli and it's in the scripts directory as [winner.ts](./scripts/winner.ts)
     -   This script sends 10 EAT to the `Bucket` contract at [0x873289a1aD6Cf024B927bd13bd183B264d274c68](https://goerli.etherscan.io/address/0x873289a1ad6cf024b927bd13bd183b264d274c68)
     -   The transfer emits the `Winner` event from `Bucket`, which displays the winner address, in this case, the signer
         -   This transaction requires to give allowance to the `Bucket` contract to take the drop value from the `ERC-20` token using the function `approve()`
